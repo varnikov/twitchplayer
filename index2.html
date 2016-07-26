@@ -1,0 +1,26 @@
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+    //<div id="twitch_embed_player"></div>
+    <script type="text/javascript">
+        var options = {
+            width: 854,
+            height: 480,
+            channel: "evilarthas", 
+            //video: "{VIDEO_ID}"       
+        };
+        var player = new Twitch.Player("twitch_embed_player", options);
+        player.setVolume(0.5);
+    </script>
+
+</head>
+
+<body>
+    <div id="twitch_embed_player"></div>
+</body>
+
+</html>
